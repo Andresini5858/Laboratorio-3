@@ -192,19 +192,19 @@ veri:
     RETURN
     
 DELAY_BIG:
-    movlw 50
-    movwf cont2
-    call DELAY_SMALL
-    decfsz cont2, f
-    goto $-2
-    return
+    MOVLW 50
+    MOVWF cont2
+    CALL DELAY_SMALL
+    DECFSZ cont2, F
+    GOTO $-2
+    RETURN
     
 DELAY_SMALL:
-    movlw 150
-    movwf cont3
-    decfsz cont3, f
-    goto $-1
-    return 
+    MOVLW 150
+    MOVWF cont3
+    DECFSZ cont3, F
+    GOTO $-1
+    RETURN
    
 END
 
